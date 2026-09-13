@@ -2,7 +2,9 @@
 [build]
   command = "npm run build"
   publish = ".output/public"
-  functions = "netlify/functions"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
